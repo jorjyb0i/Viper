@@ -8,19 +8,17 @@
 import Foundation
 import UIKit
 
-class MainTableController: UIViewController {
+class MainTableController: MainControllerBase {
     
-    var output: MainViewOutputProtocol?
     let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.delegate = self
-        
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
+        tableView.tableFooterView = UIView()
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
