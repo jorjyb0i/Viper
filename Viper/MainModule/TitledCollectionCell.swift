@@ -28,7 +28,6 @@ class TitledCollectionCell: UICollectionViewCell {
         
         self.contentView.layer.addSublayer(gradient)
         
-//        mLabelTitle.textColor = .black
         mLabelTitle.numberOfLines = 3
         mLabelTitle.lineBreakMode = .byCharWrapping
         
